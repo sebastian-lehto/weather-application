@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+
+.week {
+  display: flex;
+  flex-direction:row;
+  text-align: justify;
+  justify-content: space-evenly;
+}
