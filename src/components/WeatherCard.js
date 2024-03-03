@@ -1,13 +1,14 @@
 
 const WeatherCard = ({date, temp, feels, humid, wind}) => {
     return (
-        <div>
-            <h3>{date}</h3>
-            <div>
-                <p>Temperature: {temp},  feels like: {feels}</p>
-                <p>Humidity: {humid}</p>
-                <p>Wind speed: {wind}</p>
+        <div className="card">
+            <div className="date">
+                <h3>{date.split(" ")[0]}</h3>
             </div>
+                <p className="info">Temperature: {temp}</p>
+                <p className="info">Feels like: {feels}</p>
+                <p className="info">Humidity: {humid}</p>
+                <p className="info">Wind speed: {wind}</p>            
         </div>
     )
 }
